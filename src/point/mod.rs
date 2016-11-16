@@ -1,25 +1,25 @@
+use std::fmt::{Debug,Display};
+use num_traits::{Float,Zero,One,Signed};
 
-use scalar::Scalar;
 
-#[derive(Debug,Clone,Copy)]
 pub struct Point<S> {
-    pub x: S,
-    pub y: S,
+    x: S,
+    y: S
 }
 
 
-impl<S> Point<S> 
-where S: Scalar {
-    pub fn new(x: S, y: S) -> Self {
+impl<S> Point<S>
+where S: Float + Zero + One + Signed {
+    pub fn new() -> Self {
+        Point {
+            x: S::zero(),
+            y: S::zero()
+        }
+    }
+    pub fn from_coords(x: S, y: S) -> Self {
         Point {
             x: x,
             y: y
         }
     }
-    pub fn origin() -> Self {
-        Point {
-            x: S::zero(),
-            y: S::zero()
-        }
-    }    
 }
