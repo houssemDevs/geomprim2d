@@ -1,8 +1,12 @@
-#![allow(dead_code,unused_imports)]
+#![allow(dead_code, unused_imports)]
 
+extern crate scalar;
 
-extern crate num_traits;
+mod line;
 /// Define a 2 dimensional point (x,y).
 mod point;
-mod rectangle;
 mod polygon;
+mod rectangle;
+mod segment;
+
+pub use point::*;
