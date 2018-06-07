@@ -4,4 +4,4 @@ version = "0.1.0"
 authors = ["GHIAT Houssem"]
 
 [dependencies]
-num-traits = "*"
+scalar = "0.1.7"
