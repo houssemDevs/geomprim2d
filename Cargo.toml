@@ -1,7 +1,13 @@
 [package]
 name = "geomprim2d"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["GHIAT Houssem"]
+description = "2D geometric primitive types"
+repository = "https://github.com/houssemDevs/geomprim2d"
 
+license = "MIT"
+
+keywords = ["geometry", "primitive", "point", "line", "segment", "rectangle", "triangle", "ellipse"]
+categories = ["data-structures", "science"]
 [dependencies]
 scalar = "*"
